@@ -1,3 +1,3 @@
 // Export sub modules
-pub mod Settings;
+pub mod settings;
 

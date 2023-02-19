@@ -6,7 +6,7 @@ use serde::{ Deserialize, Serialize };
 use std::{ fs, path::Path };
 use toml;
 
-// Structure
+// Structures
 #[derive(Deserialize, Serialize)]
 pub struct Settings {
     graphics: Graphics
@@ -17,7 +17,7 @@ struct Graphics {
     resolution: [u32; 2]
 }
 
-// Implements
+// Implementations
 impl Settings {
     // Read settings from file
     pub fn read<P: AsRef<Path>>(path: P) -> Result<Settings, String> {
