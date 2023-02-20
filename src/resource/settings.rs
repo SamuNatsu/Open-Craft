@@ -7,14 +7,14 @@ use std::{ fs, path::Path };
 use toml;
 
 // Structures
-#[derive(Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct Settings {
-    graphics: Graphics
+    pub graphics: Graphics
 }
 
-#[derive(Deserialize, Serialize)]
-struct Graphics {
-    resolution: [u32; 2]
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Graphics {
+    pub resolution: [u32; 2]
 }
 
 // Implementations

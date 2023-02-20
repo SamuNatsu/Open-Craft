@@ -9,3 +9,7 @@ edition = "2021"
 # Crates for serializing & deserializing
 serde = { version = "1.0", features = ["derive"] }
 toml = "0.7"
+
+# Crates for graphics
+glium = "0.32"
+glam = "0.22"

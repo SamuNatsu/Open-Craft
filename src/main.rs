@@ -1,6 +1,8 @@
 // Define modules
+mod graphic;
 mod resource;
 
 fn main() {
-    println!("Hello, world!");
+    let settings = resource::settings::Settings::read("settings.toml").unwrap();
+    println!("{:?}", settings);
 }
